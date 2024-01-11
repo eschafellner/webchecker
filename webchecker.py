@@ -22,8 +22,8 @@ def check_website(url, not_found_text):
         return False
 
 def main():
-    website_url = "https://www.poco.de/p/59851203" #page to check
-    not_found_text = "Seite nicht gefunden" #text that should be checked
+    website_url = "https://www.haag-networx.at" #page to check
+    not_found_text = "Hier siehst du aktuelle Neuigkeiten." #text that should be checked
 
     while True:
         if not check_website(website_url, not_found_text):
