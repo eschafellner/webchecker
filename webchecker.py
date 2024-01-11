@@ -22,13 +22,13 @@ def check_website(url, not_found_text):
         return False
 
 def main():
-    website_url = "https://www.poco.de/p/59851203"
-    not_found_text = "Seite nicht gefunden"
-    formatted_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    website_url = "https://www.poco.de/p/59851203" #page to check
+    not_found_text = "Seite nicht gefunden" #text that should be checked
 
     while True:
         if not check_website(website_url, not_found_text):
             print(f"Website {website_url} shows '{not_found_text}'. Retrying in 1 minutes...")
+            formatted_time = time.strftime("%Y-%m-%d %H:%M:%S")
             print("Current System Time:", formatted_time)
             time.sleep(60)  # seconds, break
         else:
