@@ -1,6 +1,6 @@
 #before using please make sure to install the required moduls
 #pip install requests
-#pin install time
+#pip install time
 #pip install beautifulsoup4 
 
 import requests
